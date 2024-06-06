@@ -15,7 +15,7 @@ COPY localhost.crt /etc/nginx/certs/localhost.crt
 COPY localhost.key /etc/nginx/certs/localhost.key
 
 # Expose ports
-EXPOSE 80 443
+EXPOSE 80 8443
 
 # Start Nginx when the container has provisioned
 CMD ["nginx", "-g", "daemon off;"]
