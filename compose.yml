@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "443:443"
+    volumes:
+      - .:/usr/share/nginx/html
+      - ./localhost.crt:/etc/nginx/certs/localhost.crt
+      - ./localhost.key:/etc/nginx/certs/localhost.key
